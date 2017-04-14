@@ -121,6 +121,8 @@
          </div>
      </div>
 </section>
+<!-- Works -->
+<div class="blete-portfolio-works wow fadeIn" data-wow-duration="2s">
 <section class="blete-section-text" id="blete-slider">
     <div class="sp-slides">
 
@@ -180,12 +182,11 @@
 
     </div>
 </section>
-
+</div>
 
 
 <!-- Main Slider End -->
 
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
 
 
 <!-- =============================
@@ -206,8 +207,7 @@
         </div>
     </div>
 
-    <!-- Works -->
-    <div class="blete-portfolio-works wow fadeIn" data-wow-duration="2s">
+
 
         <!-- Filter Button Start -->
         <%--<div id="blete-portfolio-filter" class="blete-portfolio-filter-btn-group">--%>
