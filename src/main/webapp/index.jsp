@@ -223,7 +223,7 @@
         <%--</div>--%>
         <!-- Filter Button End -->
 
-        <div class="blete-portfolio-items">
+        <div class="blete-portfolio-items wow fadeIn" data-wow-duration="2s">
 
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-design app-development">
