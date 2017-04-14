@@ -477,7 +477,7 @@
                     <div class="imgtest">
                         <figure>
                             <div >
-                                <a href="http://www.taobao.com" target="_blank"><img src="<%=basePath%>/assets/images/taobao.jpg" /></a>
+                                <a href="http://www.taobao.com" target="_blank" title="淘宝入口"><img src="<%=basePath%>/assets/images/taobao.jpg" /></a>
                                 淘宝入口
                             </div>
 
@@ -488,7 +488,7 @@
                     <div class="imgtest">
                         <figure>
                             <div >
-                                <a href="http://www.qq.com" target="_blank"><img src="<%=basePath%>/assets/images/weidian.jpg" /></a>
+                                <a href="http://www.qq.com" target="_blank" title="微店入口"><img src="<%=basePath%>/assets/images/weidian.jpg" /></a>
                                 微店入口
                             </div>
                         </figure>
