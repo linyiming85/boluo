@@ -47,10 +47,32 @@
     <link rel="stylesheet" href="<%=basePath%>/assets/css/responsive.css" />
     <link rel="stylesheet" href="<%=basePath%>/assets/css/color.css" id="colors" />
 
+
+        <style type="text/css">
+        .imgtest{margin:10px 5px;
+            overflow:hidden;}
+        .list_ul figcaption p{
+            font-size:12px;
+            color:#aaa;
+        }
+        .imgtest figure div{
+            margin-left: 50%;
+            width:100px;
+            height:100px;
+            border-radius:100px;
+            border:2px solid #fff;
+            overflow:hidden;
+            -webkit-box-shadow:0 0 3px #ccc;
+            box-shadow:0 0 3px #ccc;
+        }
+        .imgtest img{width:100%;
+            min-height:100%; text-align:center;}
+    </style>
     <!--[if lt IE 9]>
     <script src="<%=basePath%>/assets/js/html5shiv.min.js"></script>
     <script src="<%=basePath%>/assets/js/respond.min.js"></script>
     <script type="text/javascript" src="<%=basePath%>/assets/js/selectivizr.js"></script>
+
     <![endif]-->
 </head>
 
@@ -450,7 +472,30 @@
                 <img src="<%=basePath%>/assets/images/u20.jpg">
             </div>
             <!-- Section Header End -->
-            
+            <div class="wow fadeInDown ">
+                <div class="col-md-6">
+                    <div class="imgtest">
+                        <figure>
+                            <div >
+                                <a href="http://www.taobao.com" target="_blank"><img src="<%=basePath%>/assets/images/taobao.jpg" /></a>
+                                淘宝入口
+                            </div>
+
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="imgtest">
+                        <figure>
+                            <div >
+                                <a href="http://www.qq.com" target="_blank"><img src="<%=basePath%>/assets/images/weidian.jpg" /></a>
+                                微店入口
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
