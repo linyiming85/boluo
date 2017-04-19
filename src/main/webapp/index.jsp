@@ -245,12 +245,16 @@
         <%--</div>--%>
         <!-- Filter Button End -->
 
-        <div class="blete-portfolio-items wow fadeIn" data-wow-duration="2s">
+        <div class="blete-portfolio-items" data-wow-duration="2s" id="wechatContent">
 
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-design app-development">
-
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio1.jpg">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio1.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                <h4>这里是公众号的内容之类的blablalbalba，我们可以稍微多写一点</h4>
+                </div>
                 <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
@@ -267,7 +271,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-development app-development">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio2.jpg">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio2.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>
                 <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
@@ -284,8 +293,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-design">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio3.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio3.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -301,8 +314,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-design web-development photography">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio4.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio4.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -317,8 +334,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-designapp-development photography">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio5.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio5.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -334,8 +355,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item photography">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio6.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio6.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -350,8 +375,12 @@
 
             <div class="item blete-portfolio-item web-development app-development">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio7.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio7.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -367,8 +396,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-design web-development app-development photography">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio8.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio8.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -384,8 +417,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item app-development">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio9.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio9.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -401,8 +438,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item photography">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio10.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio10.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -418,8 +459,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item photography app-development">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio11.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio11.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -435,8 +480,12 @@
             <!-- Portfolio Items -->
             <div class="item blete-portfolio-item web-design">
 
-                <img src="<%=basePath%>/assets/images/img-portfolio/portfolio12.jpg">
-                <div class="blete-portfolio-details-wrapper">
+                <div class="blete-portfolio-image">
+                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio12.jpg">
+                </div>
+                <div  class="blete-portfolio-text">
+                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
+                </div>                <div class="blete-portfolio-details-wrapper">
                     <div class="blete-portfolio-details">
                         <div class="blete-portfolio-meta-btn">
                             <ul>
@@ -586,7 +635,20 @@
 <script src="<%=basePath%>/assets/js/jquery.sliderPro.min.js"></script>
 <script src="<%=basePath%>/assets/js/owl.carousel.min.js"></script>
 <script src="<%=basePath%>/assets/js/custom.js"></script>
-
+<script type="text/javascript">
+//    window.onload=function () {
+//
+//        $.ajax({
+//            url:"/wechat.do",
+//            async: false,
+//            success:function (data) {
+//                $("#wechatContent").html(data);
+//                alert($("#wechatContent").html());
+//            }
+//        });
+//
+//    }
+</script>
 </body>
 </html>
 

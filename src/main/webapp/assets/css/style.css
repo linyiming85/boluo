@@ -956,9 +956,16 @@ header.blete-page-header .blete-main-menu.minified{
 
 .blete-portfolio-items .blete-portfolio-item{
 	width: 25%;
-	height: 280px;
+	height: 380px;
 	position: relative;
 	overflow: hidden;
+}
+.blete-portfolio-items .blete-portfolio-item .blete-portfolio-image{
+	height: 280px;
+}
+
+.blete-portfolio-items .blete-portfolio-item .blete-portfolio-text{
+	height: 100px;
 }
 
 .blete-portfolio-items .blete-portfolio-item img{
