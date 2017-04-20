@@ -1,5 +1,6 @@
 package com.unicom.wechat.util;
 
+import com.alibaba.fastjson.JSONObject;
 import com.unicom.wechat.exception.WechatException;
 import com.unicom.wechat.models.Topic;
 import org.jsoup.Jsoup;
@@ -207,9 +208,9 @@ public abstract class WechatUtil {
      * @param url
      * @return
      */
-    public List<String> getTopicUrls(String url) {
+    public List<JSONObject> getTopicUrls(String url) {
 
-    	List<String> result = new ArrayList<String>();
+    	List<JSONObject> result = new ArrayList<JSONObject>();
     	if(url.equals("") || null == url)
     	{
     		return result;
@@ -220,7 +221,10 @@ public abstract class WechatUtil {
     	for (int i = 0; i < tempList.length; i++) {
     		if(tempList[i].startsWith("/s"))
     		{
-    			result.add("http://mp.weixin.qq.com" +  tempList[i].split("\",\"copyright_stat")[0].replaceAll("amp;", ""));
+                JSONObject obj=new JSONObject();
+                obj.put("url","http://mp.weixin.qq.com" +  tempList[i].split("\",\"copyright_stat")[0].replaceAll("amp;", ""));
+                obj.put("cover",tempList[i].split("\"cover\":\"")[1].split("\",\"digest")[0]);
+                result.add(obj);
     		}
 			
 		}

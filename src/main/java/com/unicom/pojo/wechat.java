@@ -17,6 +17,15 @@ public class Wechat {
     private String images;
     private Date date;
     private String user;
+    private String cover;
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
 
     public String getUrl() {
         return url;
@@ -75,18 +84,6 @@ public class Wechat {
     }
 
     public static void main(String[] args){
-        WechatDao wechatDao=(WechatDao)BeanFactoryUtil.getBean("wechatDao");
-//        Wechat wechat=new Wechat();
-//        wechat.setUrl("1");
-//        wechat.setContent("2");
-//        wechat.setDate(new Date());
-//        wechat.setImages("adsfas");
-//        wechat.setTitle("sss");
-//        wechat.setUser("4");
-//        wechatDao.addWechat(wechat);
-        List<Wechat> wechatList=wechatDao.queryWechat();
-        for (Wechat wechat:wechatList){
-            System.out.println(wechat.getImages());
-        }
+
     }
 }

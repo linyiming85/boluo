@@ -1,6 +1,10 @@
 package com.unicom.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
+import com.unicom.common.BeanFactoryUtil;
+import com.unicom.dao.WechatDao;
+import com.unicom.pojo.Wechat;
 import com.unicom.wechat.WechatSpider;
 import com.unicom.wechat.models.Topic;
 import org.springframework.stereotype.Controller;
@@ -8,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,20 +30,40 @@ public class BaseController {
 
     @RequestMapping("/wechat")
     public String wechat(HttpServletRequest request, HttpServletResponse response) {
-        WechatSpider spider = new WechatSpider("MINI__china");//小米
-        String listUrl = spider.getListUrl();
-        System.out.println(listUrl);
-        List list = spider.getTopicUrls(listUrl);
-        if(list.size()>12){
-            List tempList=new ArrayList<>();
-            for(int i=0;i<12;i++){
-                String url= (String) list.get(i);
-                Topic topic=spider.getTopicByUrl(url);
-                tempList.add(topic);
-            }
-            list=tempList;
+        WechatDao wechatDao=(WechatDao) BeanFactoryUtil.getBean("wechatDao");
+        List<Wechat> wechatList=wechatDao.queryWechat();
+        List<Wechat> list=new ArrayList<Wechat>();
+        for(int i=0;i<8;i++){
+            list.add(wechatList.get(i));
         }
         request.setAttribute("wecharList",list);
         return "hello";
+    }
+
+    @RequestMapping("/addata")
+    public void addata(HttpServletRequest request,HttpServletResponse response) throws ParseException {
+        WechatSpider spider = new WechatSpider("MINI__china");//小米
+        String listUrl = spider.getListUrl();
+        System.out.println(listUrl);
+        List<JSONObject> list = spider.getTopicUrls(listUrl);
+        WechatDao wechatDao=(WechatDao) BeanFactoryUtil.getBean("wechatDao");
+        for (JSONObject jsonObject : list) {
+            String url=jsonObject.getString("url");
+            Topic topic = spider.getTopicByUrl(url);
+            Wechat wechat=new Wechat();
+            wechat.setUser(topic.getUser());
+            wechat.setTitle(topic.getTitle());
+            wechat.setUrl(topic.getUrl());
+            wechat.setContent(topic.getContent());
+            wechat.setCover(jsonObject.getString("cover"));
+            SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
+            wechat.setDate(dateFormat.parse(topic.getDate()));
+            String images=new String ();
+            for(String image:topic.getImages()){
+                images+=image+";";
+            }
+            wechat.setImages(images);
+            wechatDao.addWechat(wechat);
+        }
     }
 }

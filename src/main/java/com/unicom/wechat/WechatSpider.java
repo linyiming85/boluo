@@ -1,6 +1,7 @@
 package com.unicom.wechat;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.unicom.common.BeanFactoryUtil;
 import com.unicom.dao.WechatDao;
 import com.unicom.pojo.Wechat;
@@ -28,27 +29,29 @@ public class WechatSpider extends WechatUtil {
 
 
     public static void main(String[] args) throws ParseException {
-        WechatSpider spider = new WechatSpider("MINI__china");//小米
-        String listUrl = spider.getListUrl();
-        System.out.println(listUrl);
-        List<String> list = spider.getTopicUrls(listUrl);
-        WechatDao wechatDao=(WechatDao) BeanFactoryUtil.getBean("wechatDao");
-        for (String url : list) {
-			Topic topic = spider.getTopicByUrl(url);
-            Wechat wechat=new Wechat();
-            wechat.setUser(topic.getUser());
-            wechat.setTitle(topic.getTitle());
-            wechat.setUrl(topic.getUrl());
-            wechat.setContent(topic.getContent());
-            SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            wechat.setDate(dateFormat.parse(topic.getDate()));
-            String images=new String ();
-            for(String image:topic.getImages()){
-                images+=image+";";
-            }
-            wechat.setImages(images);
-            wechatDao.addWechat(wechat);
-		}
+//        WechatSpider spider = new WechatSpider("MINI__china");//小米
+//        String listUrl = spider.getListUrl();
+//        System.out.println(listUrl);
+//        List<JSONObject> list = spider.getTopicUrls(listUrl);
+//        WechatDao wechatDao=(WechatDao) BeanFactoryUtil.getBean("wechatDao");
+//        for (JSONObject jsonObject : list) {
+//            String url=jsonObject.getString("url");
+//			Topic topic = spider.getTopicByUrl(url);
+//            Wechat wechat=new Wechat();
+//            wechat.setUser(topic.getUser());
+//            wechat.setTitle(topic.getTitle());
+//            wechat.setUrl(topic.getUrl());
+//            wechat.setContent(topic.getContent());
+//            wechat.setCover(jsonObject.getString("cover"));
+//            SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
+//            wechat.setDate(dateFormat.parse(topic.getDate()));
+//            String images=new String ();
+//            for(String image:topic.getImages()){
+//                images+=image+";";
+//            }
+//            wechat.setImages(images);
+//            wechatDao.addWechat(wechat);
+//		}
     }
 
 }

@@ -6,6 +6,9 @@
               <if test="url!=''">
                   url,
               </if>
+              <if test="cover!=''">
+                  cover,
+              </if>
               <if test="title!=''">
                   title,
               </if>
@@ -26,6 +29,9 @@
             <trim suffixOverrides=",">
                 <if test="url!=''">
                     #{url},
+                </if>
+                <if test="cover!=''">
+                    #{cover},
                 </if>
                 <if test="title!=''">
                     #{title},
@@ -49,14 +55,18 @@
     <select id="queryWechat" resultType="com.unicom.pojo.Wechat">
         SELECT
           id,
+          cover,
           url,
           title,
           content,
           images,
           date,
-          USER
+          user
          FROM
           tab_wechat
+         ORDER BY
+          date
+         DESC
     </select>
 </mapper>
 

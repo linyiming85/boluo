@@ -414,89 +414,6 @@
             </div>
             <!-- Portfolio Items End -->
 
-            <!-- Portfolio Items -->
-            <div class="item blete-portfolio-item app-development">
-
-                <div class="blete-portfolio-image">
-                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio9.jpg">
-                </div>
-                <div  class="blete-portfolio-text">
-                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
-                </div>                <div class="blete-portfolio-details-wrapper">
-                    <div class="blete-portfolio-details">
-                        <div class="blete-portfolio-meta-btn">
-                            <ul>
-                                <li class="blete-lighbox"><a href="<%=basePath%>/assets/images/img-portfolio/portfolio9.jpg" class="blete-featured-work-img"><i class="fa fa-search"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Portfolio Items End -->
-
-            <!-- Portfolio Items -->
-            <div class="item blete-portfolio-item photography">
-
-                <div class="blete-portfolio-image">
-                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio10.jpg">
-                </div>
-                <div  class="blete-portfolio-text">
-                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
-                </div>                <div class="blete-portfolio-details-wrapper">
-                    <div class="blete-portfolio-details">
-                        <div class="blete-portfolio-meta-btn">
-                            <ul>
-                                <li class="blete-lighbox"><a href="<%=basePath%>/assets/images/img-portfolio/portfolio10.jpg" class="blete-featured-work-img"><i class="fa fa-search"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Portfolio Items End -->
-
-            <!-- Portfolio Items -->
-            <div class="item blete-portfolio-item photography app-development">
-
-                <div class="blete-portfolio-image">
-                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio11.jpg">
-                </div>
-                <div  class="blete-portfolio-text">
-                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
-                </div>                <div class="blete-portfolio-details-wrapper">
-                    <div class="blete-portfolio-details">
-                        <div class="blete-portfolio-meta-btn">
-                            <ul>
-                                <li class="blete-lighbox"><a href="<%=basePath%>/assets/images/img-portfolio/portfolio11.jpg" class="blete-featured-work-img"><i class="fa fa-search"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Portfolio Items End -->
-
-            <!-- Portfolio Items -->
-            <div class="item blete-portfolio-item web-design">
-
-                <div class="blete-portfolio-image">
-                    <img src="<%=basePath%>/assets/images/img-portfolio/portfolio12.jpg">
-                </div>
-                <div  class="blete-portfolio-text">
-                    <h4>这里是公众号的内容之类，公众号文章一定要在12条以上啊</h4>
-                </div>                <div class="blete-portfolio-details-wrapper">
-                    <div class="blete-portfolio-details">
-                        <div class="blete-portfolio-meta-btn">
-                            <ul>
-                                <li class="blete-lighbox"><a href="<%=basePath%>/assets/images/img-portfolio/portfolio12.jpg" class="blete-featured-work-img"><i class="fa fa-search"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Portfolio Items End -->
 
         </div>
     </div>
@@ -636,18 +553,18 @@
 <script src="<%=basePath%>/assets/js/owl.carousel.min.js"></script>
 <script src="<%=basePath%>/assets/js/custom.js"></script>
 <script type="text/javascript">
-//    window.onload=function () {
-//
-//        $.ajax({
-//            url:"/Wechat.do",
-//            async: false,
-//            success:function (data) {
-//                $("#wechatContent").html(data);
-//                alert($("#wechatContent").html());
-//            }
-//        });
-//
-//    }
+    $().ready($.ajax({
+        url:"/wechat.do",
+        async: false,
+        success:function (data) {
+            $("#wechatContent").html(data);
+            alert($("#wechatContent").html());
+        }
+    }));
+
+
+
+
 </script>
 </body>
 </html>
