@@ -1,9 +1,62 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.unicom.dao.WechatDao">
-    <insert id="addWechat" parameterType="com.unicom.pojo.wechat">
-        INSERT INTO tab_wechat
-          id,
-
+    <insert id="addWechat" parameterType="com.unicom.pojo.Wechat">
+        INSERT INTO tab_wechat (
+          <trim suffixOverrides=",">
+              <if test="url!=''">
+                  url,
+              </if>
+              <if test="title!=''">
+                  title,
+              </if>
+              <if test="content!=''">
+                  content,
+              </if>
+              <if test="images!=''">
+                  images,
+              </if>
+              <if test="date!=''">
+                  date,
+              </if>
+              <if test="user!=''">
+                  user,
+              </if>
+          </trim>
+        ) VALUES (
+            <trim suffixOverrides=",">
+                <if test="url!=''">
+                    #{url},
+                </if>
+                <if test="title!=''">
+                    #{title},
+                </if>
+                <if test="content!=''">
+                    #{content},
+                </if>
+                <if test="images!=''">
+                    #{images},
+                </if>
+                <if test="date!=''">
+                    #{date},
+                </if>
+                <if test="user!=''">
+                    #{user},
+                </if>
+            </trim>
+        )
     </insert>
+
+    <select id="queryWechat" resultType="com.unicom.pojo.Wechat">
+        SELECT
+          id,
+          url,
+          title,
+          content,
+          images,
+          date,
+          USER
+         FROM
+          tab_wechat
+    </select>
 </mapper>
 

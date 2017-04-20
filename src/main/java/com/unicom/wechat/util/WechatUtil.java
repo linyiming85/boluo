@@ -144,7 +144,7 @@ public abstract class WechatUtil {
         Element topicUrl = doc.select("url").first();
         if (null == topicUrl) {
             throw new WechatException(
-                    "make sure the openId is right, otherwise no topcs in this wechat account");
+                    "make sure the openId is right, otherwise no topcs in this Wechat account");
         }
         topicUrl.select("title1").remove();
         String url = topicUrl.text();
@@ -268,7 +268,7 @@ public abstract class WechatUtil {
         ListIterator<Element> topicUrls = doc.select("url").listIterator();
         if (!topicUrls.hasNext()) {
             throw new WechatException(
-                    "make sure the openId is right, otherwise no topics in this wechat account");
+                    "make sure the openId is right, otherwise no topics in this Wechat account");
         }
 
         while (topicUrls.hasNext()) {

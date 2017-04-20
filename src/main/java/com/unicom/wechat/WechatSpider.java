@@ -1,9 +1,14 @@
 package com.unicom.wechat;
 
 
+import com.unicom.common.BeanFactoryUtil;
+import com.unicom.dao.WechatDao;
+import com.unicom.pojo.Wechat;
 import com.unicom.wechat.models.Topic;
 import com.unicom.wechat.util.WechatUtil;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class WechatSpider extends WechatUtil {
@@ -22,15 +27,27 @@ public class WechatSpider extends WechatUtil {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         WechatSpider spider = new WechatSpider("MINI__china");//小米
         String listUrl = spider.getListUrl();
         System.out.println(listUrl);
         List<String> list = spider.getTopicUrls(listUrl);
+        WechatDao wechatDao=(WechatDao) BeanFactoryUtil.getBean("wechatDao");
         for (String url : list) {
-        	System.out.println(url);
 			Topic topic = spider.getTopicByUrl(url);
-			System.out.println(topic.getContent());
+            Wechat wechat=new Wechat();
+            wechat.setUser(topic.getUser());
+            wechat.setTitle(topic.getTitle());
+            wechat.setUrl(topic.getUrl());
+            wechat.setContent(topic.getContent());
+            SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            wechat.setDate(dateFormat.parse(topic.getDate()));
+            String images=new String ();
+            for(String image:topic.getImages()){
+                images+=image+";";
+            }
+            wechat.setImages(images);
+            wechatDao.addWechat(wechat);
 		}
     }
 

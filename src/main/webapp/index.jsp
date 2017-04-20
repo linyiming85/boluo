@@ -639,7 +639,7 @@
 //    window.onload=function () {
 //
 //        $.ajax({
-//            url:"/wechat.do",
+//            url:"/Wechat.do",
 //            async: false,
 //            success:function (data) {
 //                $("#wechatContent").html(data);

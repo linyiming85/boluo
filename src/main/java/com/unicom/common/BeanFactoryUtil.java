@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class BeanFactoryUtil {
-    static ApplicationContext context=new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mail.xml"});
+    static ApplicationContext context=new ClassPathXmlApplicationContext(new String[]{"application.xml"});
 
 
     public static Object getBean(String beanName){

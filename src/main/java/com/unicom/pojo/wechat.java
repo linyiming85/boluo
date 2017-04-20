@@ -1,17 +1,21 @@
 package com.unicom.pojo;
 
+import com.unicom.common.BeanFactoryUtil;
+import com.unicom.dao.WechatDao;
+
+import java.util.Date;
 import java.util.List;
 
 /**
  * Created by linym on 2017/4/19.
  */
-public class wechat {
+public class Wechat {
     private int id;
     private String url;
     private String title;
     private String content;
     private String images;
-    private String date;
+    private Date date;
     private String user;
 
     public String getUrl() {
@@ -46,11 +50,11 @@ public class wechat {
         this.images = images;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -68,5 +72,21 @@ public class wechat {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public static void main(String[] args){
+        WechatDao wechatDao=(WechatDao)BeanFactoryUtil.getBean("wechatDao");
+//        Wechat wechat=new Wechat();
+//        wechat.setUrl("1");
+//        wechat.setContent("2");
+//        wechat.setDate(new Date());
+//        wechat.setImages("adsfas");
+//        wechat.setTitle("sss");
+//        wechat.setUser("4");
+//        wechatDao.addWechat(wechat);
+        List<Wechat> wechatList=wechatDao.queryWechat();
+        for (Wechat wechat:wechatList){
+            System.out.println(wechat.getImages());
+        }
     }
 }
