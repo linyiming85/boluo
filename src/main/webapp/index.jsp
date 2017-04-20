@@ -558,7 +558,6 @@
         async: false,
         success:function (data) {
             $("#wechatContent").html(data);
-            alert($("#wechatContent").html());
         }
     }));
 

@@ -965,7 +965,14 @@ header.blete-page-header .blete-main-menu.minified{
 }
 
 .blete-portfolio-items .blete-portfolio-item .blete-portfolio-text{
-	height: 100px;
+	height: 50px;
+	width: 80%;
+	border:2px;
+	border-color:blue;
+}
+.blete-portfolio-items .blete-portfolio-item .blete-portfolio-content{
+	height: 50px;
+	width: 80%;
 }
 
 .blete-portfolio-items .blete-portfolio-item img{
