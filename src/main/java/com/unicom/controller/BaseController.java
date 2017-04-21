@@ -75,7 +75,7 @@ public class BaseController {
         List<Wechat> wechats = wechatDao.queryWechat();
         for (int i=0;i<wechats.size();i++) {
             Wechat wechat=wechats.get(i);
-            DownloadImage.download(wechat.getCover(), "cover"+i+".jpg", "assets/images");
+            DownloadImage.download(wechat.getCover(), "cover"+i+".jpg", "../webapps/boluo/assets/images");
         }
     }
 }
