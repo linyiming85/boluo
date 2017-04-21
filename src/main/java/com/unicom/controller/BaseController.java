@@ -3,6 +3,7 @@ package com.unicom.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.unicom.common.BeanFactoryUtil;
+import com.unicom.common.DownloadImage;
 import com.unicom.dao.WechatDao;
 import com.unicom.pojo.Wechat;
 import com.unicom.wechat.WechatSpider;
@@ -42,7 +43,7 @@ public class BaseController {
 
     @RequestMapping("/addata")
     public void addata(HttpServletRequest request,HttpServletResponse response) throws ParseException {
-        WechatSpider spider = new WechatSpider("MINI__china");//小米
+        WechatSpider spider = new WechatSpider("gh_1862b1532c19");//boluo
         String listUrl = spider.getListUrl();
         System.out.println(listUrl);
         List<JSONObject> list = spider.getTopicUrls(listUrl);
@@ -64,6 +65,17 @@ public class BaseController {
             }
             wechat.setImages(images);
             wechatDao.addWechat(wechat);
+        }
+    }
+
+    @RequestMapping("/downloadimages")
+    public void downloadimages(HttpServletRequest request,HttpServletResponse response) throws Exception {
+        // TODO Auto-generated method stub
+        WechatDao wechatDao = (WechatDao) BeanFactoryUtil.getBean("wechatDao");
+        List<Wechat> wechats = wechatDao.queryWechat();
+        for (int i=0;i<wechats.size();i++) {
+            Wechat wechat=wechats.get(i);
+            DownloadImage.download(wechat.getCover(), "cover"+i+".jpg", "assets/images");
         }
     }
 }
