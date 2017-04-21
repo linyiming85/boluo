@@ -25,7 +25,7 @@
         <img src="<%=basePath%>/assets/images/cover<%=i%>.jpg">
     </div>
     <div  class="blete-portfolio-text">
-        <h4 class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1"><%=wechat.getTitle()%></h4>
+        <h4><%=wechat.getTitle()%></h4>
     </div>
 
     <div class="blete-portfolio-details-wrapper">

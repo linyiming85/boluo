@@ -951,24 +951,24 @@ header.blete-page-header .blete-main-menu.minified{
 	color: #ffffff;
 }
 .blete-portfolio-items{
+	margin-left: 1%;
 	overflow: hidden;
 }
 
 .blete-portfolio-items .blete-portfolio-item{
 	width: 25%;
-	height: 380px;
+	height: 280px;
 	position: relative;
 	overflow: hidden;
 }
 .blete-portfolio-items .blete-portfolio-item .blete-portfolio-image{
-	height: 280px;
+	height: 240px;
+	width:	300px;
 }
 
 .blete-portfolio-items .blete-portfolio-item .blete-portfolio-text{
 	height: 50px;
 	width: 80%;
-	border:2px;
-	border-color:blue;
 }
 .blete-portfolio-items .blete-portfolio-item .blete-portfolio-content{
 	height: 50px;
