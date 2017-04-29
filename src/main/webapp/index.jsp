@@ -87,7 +87,7 @@
 ================================== -->
 <header>
     <!-- Navigation Menu start-->
-    <nav class="navbar blete-main-menu" role="navigation">
+    <nav class="navbar blete-main-menu " role="navigation">
         <div class="container">
 
             <!-- Navbar Toggle -->
@@ -152,7 +152,7 @@
         <div class="sp-slide blete-main-slides">
             <div class="blete-img-overlay"></div>
 
-            <img class="sp-image" src="<%=basePath%>/assets/images/img-header/slider-img-1.jpg" alt="Slider 1"/>
+            <img class="sp-image" src="<%=basePath%>/assets/images/img-header/header1.jpg" alt="Slider 1"/>
 
             <h1 class="sp-layer blete-slider-text-big"
                 data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
@@ -169,7 +169,7 @@
         <!-- Slides -->
         <div class="sp-slide blete-main-slides">
             <div class="blete-img-overlay"></div>
-            <img class="sp-image" src="<%=basePath%>/assets/images/img-header/slider-img-2.jpg" alt="Slider 2"/>
+            <img class="sp-image" src="<%=basePath%>/assets/images/img-header/header2.jpg" alt="Slider 2"/>
 
             <h1 class="sp-layer blete-slider-text-big"
                 data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
@@ -184,22 +184,22 @@
         <!-- Slides End -->
 
         <!-- Slides -->
-        <div class="sp-slide blete-main-slides">
-            <div class="blete-img-overlay"></div>
+        <%--<div class="sp-slide blete-main-slides">--%>
+            <%--<div class="blete-img-overlay"></div>--%>
 
-            <img class="sp-image" src="<%=basePath%>/assets/images/img-header/slider-img-3.jpg" alt="Slider 3"/>
+            <%--<img class="sp-image" src="<%=basePath%>/assets/images/img-header/slider-img-3.jpg" alt="Slider 3"/>--%>
 
-            <h1 class="sp-layer blete-slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1000" data-hide-delay="200">
-                Amazing
-            </h1>
+            <%--<h1 class="sp-layer blete-slider-text-big"--%>
+                <%--data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1000" data-hide-delay="200">--%>
+                <%--Amazing--%>
+            <%--</h1>--%>
 
-            <p class="sp-layer"
-               data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                <span class="blete-highlight-text">Amazing</span> lorem ipsum dolor
-            </p>
+            <%--<p class="sp-layer"--%>
+               <%--data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">--%>
+                <%--<span class="blete-highlight-text">Amazing</span> lorem ipsum dolor--%>
+            <%--</p>--%>
 
-        </div>
+        <%--</div>--%>
         <!-- Slides End -->
 
     </div>
