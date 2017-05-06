@@ -137,7 +137,7 @@
                 <h2>Why choose  <span class="blete-highlight-text">Boluo</span></h2>
                 <div class="blete-section-divider"></div>
                 <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
-                    充满希望的腰疼青年的名片产物
+                    For the All-round Well-Beings of Lower Back Pain Young Suffers
                 </p>
             </div>
          </div>
@@ -154,14 +154,14 @@
 
             <img class="sp-image" src="<%=basePath%>/assets/images/img-header/header1.jpg" alt="Slider 1"/>
 
-            <h1 class="sp-layer blete-slider-text-big"
+            <p class="sp-layer blete-slider-text-big"
                 data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                Responsive
-            </h1>
+                Boluo actively participated in "IMS health company challenge" held by AFC
+            </p>
 
             <p class="sp-layer"
                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                <span class="blete-highlight-text">Creative</span> lorem ipsum dolor
+               student entrepreneur organization of KU Leuven
             </p>
         </div>
         <!-- Slides End -->
@@ -171,14 +171,14 @@
             <div class="blete-img-overlay"></div>
             <img class="sp-image" src="<%=basePath%>/assets/images/img-header/header2.jpg" alt="Slider 2"/>
 
-            <h1 class="sp-layer blete-slider-text-big"
+            <p class="sp-layer blete-slider-text-big"
                 data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                Clean Design
-            </h1>
+                Boluo actively participated in "IMS health company challenge" held by AFC
+            </p>
 
             <p class="sp-layer"
                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                <span class="blete-highlight-text">Clean</span>lorem ipsum dolor
+               student entrepreneur organization of KU Leuven
             </p>
         </div>
         <!-- Slides End -->
@@ -462,11 +462,20 @@
                 </div>
 
             </div>
+
+            <div class="wow fadeInDown">
+                <div class="col-md-12 col-sm-12 col-xs-12 blete-section-header wow fadeInDown">
+                    <h2><span class="blete-highlight-text">扫一扫</span>关注我们</h2>
+                    <div class="blete-section-divider"></div>
+                    <img src="<%=basePath%>/assets/images/gongzhonghao.jpg">
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Contact Section End -->
+
 
 
 <!-- =============================
@@ -476,9 +485,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h3>About</h3>
+                <h3>Contact</h3>
                 <ul>
-                    <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae nihil, culpa nemo dolore explicabo ipsa? Qui, et, porro. Nemo officiis possimus assumenda quia reiciendis asperiores aliquam quae minima, eos.</span></li>
+                    <li><span>  boluo_weixin@gmail.com</span></li>
                 </ul>
             </div>
             <div class="col-md-3">
